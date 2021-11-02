@@ -1,0 +1,12 @@
+<|DOCTYPE html>
+<html>
+<head>
+<title>home</title>/
+</head>
+<body>
+<a href="/post">post</a><br><br>
+<a href="/view">view list</a><br><br>
+<a href="/delete">delete records</a><br><br>
+</body>
+</html>
+
