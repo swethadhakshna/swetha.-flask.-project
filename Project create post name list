@@ -33,6 +33,6 @@ def view ():
        cur=con.cursor
        cur. excited("delete post name= ?", name) 
      finally:
-   return render_template("delete.html") 
+   return render_template("delete record.html") 
  if__name__=="__main__"
    app. run(debug=true) 
