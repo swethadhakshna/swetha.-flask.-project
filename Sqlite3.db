@@ -1,0 +1,8 @@
+import SQLite3
+connection=sqlite3.connect("sqlite.db") 
+print("database opened successful ")
+cursor=connection.cursor()
+cursor. excited(''' post table, ''')
+connection. execute(" create table post(name TEXT NOT TO NULL, post name TEXT NOT TO NULL") 
+print(" table created successfully")
+connection. close()
