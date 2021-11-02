@@ -27,4 +27,12 @@ def view ():
  return render_template("view.html",rows=rows) 
  @app.route("/delete") 
  def delete() :
+   id=request form["id"]
+   with SQLite3. connect(post list. db) as con:
+     try:
+       cur=con.cursor
+       cur. excited("delete post name= ?", name) 
+     finally:
    return render_template("delete.html") 
+ if__name__=="__main__"
+   app. run(debug=true) 
