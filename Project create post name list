@@ -4,10 +4,10 @@ app=flask(__name__)
 @app.route('/',methods=["POST", "GET"]) 
 def index():
  return render_template("index.html") 
-@app.route('/add post', methods=" post") 
+@app.route("/add post", methods=" post") 
 def add post():
  return render_template("post.html") 
-@app.route("saved details",method= ["post""GET"]) 
+@app.route("/saved details",method= ["post""GET"]) 
 def saveddetails()for:
  try
   name=request form["name"]
