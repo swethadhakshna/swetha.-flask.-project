@@ -12,7 +12,7 @@ def saveddetails()for:
  try
   name=request form["name"]
   post name=request form["post name"]
-  with SQLite3. connect("posting table") as con:
+  with SQLite3. connect("post list") as con:
     cur=con.cursor() 
     cur. execute("INSERT into (name, post name) value(?,?) ", (name, post name) ) 
     con. commit() 
@@ -20,9 +20,9 @@ def saveddetails()for:
 @app.route("/view list") 
 def view ():
  con=SQLite3.connect(" post list")
- con. row_factory=sqlite.Row
+ con. row_factory=sqlite3.Row
  cur=con.cursor() 
- cur. excited("select *from address") 
+ cur. excited("select *from name") 
  rows=cur.fetchall() 
  return render_template("view.html",rows=rows) 
  @app.route("/delete") 
