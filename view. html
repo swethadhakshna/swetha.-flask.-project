@@ -1,0 +1,27 @@
+<|Doctype>
+<html>
+<head>
+ <title>list</title>
+</head>
+<table>
+<thead>
+<td>ID </td>
+<td>name</td>
+<td>post name</td>
+</thead>
+{% for row in rows%}
+<tr>
+<td>{{row{"id"}}}</td>
+<td>{{row{"name"}}}</td>
+<td>{{row{"post name"}}}</td>
+</tr>
+{%endfor%}
+</table>
+<br><br>
+<a href="/">go back to home page</a>
+</body>
+</html>
+
+
+
+
